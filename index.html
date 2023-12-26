@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/style/splide.min.css" />
+    <link rel="stylesheet" href="./src/style/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style/output.css" />
+    <title>L.I.S</title>
+  </head>
+  <body>
+    <div
+      class="loader flex items-center justify-center min-h-screen z-50 bg-black bg-opacity-25 fixed inset-0"
+    >
+      L.I.S.....
+    </div>
+    <!-- 
+        NAVBAR
+     -->
+    <nav
+      class="py-2 transition-colors fixed top-0 w-full z-50 px-4 md:px-10 lg:px-40"
+    >
+      <div class="flex relative z-50 justify-between items-center">
+        <div class="logo">
+          <a href="#home">
+            <img
+              src="./src/assets/logo.png"
+              style="width: 100px"
+              class=""
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- NAV ITEMS -->
+        <ul class="hidden md:flex gap-x-3">
+          <li>
+            <a
+              href="#home"
+              class="md:py-1 py-2 px-8 rounded-tr-2xl rounded-bl-2xl"
+            >
+              <i class="fa-solid pr-2 fa-house"></i>Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="md:py-1 py-2 px-8 rounded-tr-2xl rounded-bl-2xl"
+            >
+              <i class="fa-regular pr-2 fa-circle-question"></i>About US
+            </a>
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="md:py-1 py-2 px-8 rounded-tr-2xl rounded-bl-2xl"
+            >
+              <i class="fa-solid pr-2 fa-store"></i>Products
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="md:py-1 py-2 px-8 rounded-tr-2xl rounded-bl-2xl"
+            >
+              <i class="fa-regular pr-2 fa-envelope-open"></i>
+              Contact US
+            </a>
+          </li>
+        </ul>
+
+        <div class="list md:hidden cursor-pointer">
+          <i class="fa-solid text-2xl fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="z-40 hidden toggledList fixed bg-black bg-opacity-50 inset-0">
+        <div class="bg-black h-full absolute pt-20"></div>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="hero px-4 md:px-10 lg:px-40 flex items-center min-h-screen"
+    >
+      <div class="w-full flex items-center justify-between">
+        <div class="w-full md:w-1/2 text-center">
+          <h1 class="text-2xl md:text-4xl font-bold leading-normal">
+            Any <span class="theme-color">Device,</span> <br />Every
+            <span class="theme-color">System,</span>
+            <br />
+            <span style="letter-spacing: 3px" class="theme-color"
+              >Empowering</span
+            >
+            Your Success
+          </h1>
+          <h3 class="mt-1 text-md text-gray-300">
+            Where Support Never Ends!, find out any
+            <span class="theme-color">Hardware & IT device</span>
+          </h3>
+
+          <div class="mt-5 ">
+            <a
+              class="theme-bg-color rounded-xl opacity-90 inline-block hover:opacity-100 px-5 py-2"
+              href=""
+            >
+              Get in touch
+            </a>
+            <div class="inline-block">
+              <a
+                class="border  relative theme-border theme-color ml-3 inline-block rounded-xl px-5 py-2"
+                href=""
+              >
+                Explore
+              </a>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./src/assets/hero.png"
+          class="hidden w-1/2 lg:block rounded-3xl"
+          alt="IT devices"
+        />
+      </div>
+
+      <svg
+        class="absolute left-0 bottom-0 -z-10"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="rgb(196, 127, 0)"
+          fill-opacity="1"
+          d="M0,256L40,224C80,192,160,128,240,122.7C320,117,400,171,480,208C560,245,640,267,720,277.3C800,288,880,288,960,250.7C1040,213,1120,139,1200,101.3C1280,64,1360,64,1400,64L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section id="about" class="min-h-screen md:sticky flex items-center top-0 bg-slate-100">
+      <div
+        class="overflow-hidden px-4 md:px-10 py-10 lg:px-40 flex items-center flex-wrap"
+      >
+        <img
+          src="./src/assets/about.png"
+          class="opacity-0 w-full md:w-1/2 transition-all aboutRightImg"
+          alt=""
+        />
+        <div
+          class="w-full md:w-1/2 mt-5 md:mt-0 aboutLeftContent  transition-all translate-x-20 text-black rounded-3xl overflow-hidden bg-gray-200 shadow-2xl"
+        >
+          <div
+            class="flex px-3 md:px-10 py-5 theme-bg-color text-white justify-between items-center"
+          >
+            <h2
+              style="letter-spacing: 4px"
+              class="relative text-2xl md:text-4xl font-bold"
+            >
+              About Us
+            </h2>
+            <i class="fa-regular fa-2x fa-circle-question"></i>
+          </div>
+          <div class="px-3 md:px-10 text-gray-600 py-5">
+            <p>
+              -
+              <span class="text-xl theme-color">L.I.S</span>
+              not just a company; we're a group of tech enthusiasts on a mission
+              to revolutionize your digital experience. providing cutting-edge
+              IT solutions and high-quality hardware devices to empower
+              businesses and individuals alike.
+            </p>
+            <p class="mt-3">
+              -
+              <span class="text-xl theme-color">Our Mission</span>
+              We strive to be the go-to source for all your IT requirements,
+              offering a diverse range of products that cater to the dynamic
+              demands of the digital era.
+            </p>
+
+            <p class="mt-3">
+              -
+              <span class="text-xl theme-color">CEO & Founder</span>
+              Eng Tarek Attia with over than +20 years of experience in Hardware
+              and IT devices providers
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="sticky top-0 min-h-screen bg-dark">
+      <div class="py-16 px-4 md:px-10 lg:px-40">
+        <h2
+          class="text-2xl md:text-5xl opacity-0 transition-all scale-0 productTitle font-bold text-center"
+        >
+          Products
+        </h2>
+        <div class="mt-5 md:flex md:justify-center">
+          <div class="p-3 bg-white bg-opacity-20 rounded-full">
+            <div id="sql" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list text-center">
+                  <li
+                    data-product="it"
+                    class="splide__slide border theme-border theme-bg-color cursor-pointer px-5 py-2 rounded-full"
+                  >
+                    Hardware & IT Devices
+                  </li>
+                  <li
+                    data-product="sec"
+                    class="splide__slide cursor-pointer border theme-border theme-color px-5 py-2 rounded-full"
+                  >
+                    Security Systems
+                  </li>
+                  <li
+                    data-product="software"
+                    class="splide__slide cursor-pointer theme-border border theme-color px-5 py-2 rounded-full"
+                  >
+                    software products
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 px-4 md:px-10">
+          <div id="it" class="splide">
+            <div class="splide__track px-10">
+              <ul class="splide__list px-10">
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/laptops.jpg" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Laptops
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/desktops.jpg" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Desktops
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/prinnters.webp" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Printers
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/access.jpg" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Access Points
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/servers.jpg" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Servers
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/cables.jpg" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Networks cables
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/ups.jpg" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">UPSs</div>
+                </li>
+              </ul>
+            </div>
+            <div class="splide__arrows">
+              <button
+                class="splide__arrow splide__arrow--prev theme-bg-color -left-7 md:-left-10"
+              >
+                <i class="fa-solid fa-circle-arrow-left"></i>
+              </button>
+              <button
+                class="splide__arrow splide__arrow--next theme-bg-color -right-7 md:-right-10"
+              >
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div id="sec" class="splide hidden">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li
+                  class="splide__slide bg-white bg-opacity-10 rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/cam_sys.png" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Camera system
+                  </div>
+                </li>
+                <li
+                  class="splide__slide bg-white bg-opacity-10 rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/time.png" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Time attendance system
+                  </div>
+                </li>
+                <li
+                  class="splide__slide bg-white bg-opacity-10 rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/access.png" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Access control systems
+                  </div>
+                </li>
+                <li
+                  class="splide__slide bg-white bg-opacity-10 rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/laser_beam.png" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Laser Beam systems
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="splide__arrows">
+              <button
+                class="splide__arrow splide__arrow--prev theme-bg-color -left-7 md:-left-10"
+              >
+                <i class="fa-solid fa-circle-arrow-left"></i>
+              </button>
+              <button
+                class="splide__arrow splide__arrow--next theme-bg-color -right-7 md:-right-10"
+              >
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div id="software" class="splide hidden">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/micro.webp" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Microsoft products
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/adobe.png" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Adobe products
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/firewal.png" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Firewalls
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/cloud.jpg" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Cloud Solutions
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/backup.jpg" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Backup & Recovery
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="splide__arrows">
+              <button
+                class="splide__arrow splide__arrow--prev theme-bg-color -left-7 md:-left-10"
+              >
+                <i class="fa-solid fa-circle-arrow-left"></i>
+              </button>
+              <button
+                class="splide__arrow splide__arrow--next theme-bg-color -right-7 md:-right-10"
+              >
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <!--  -->
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="min-h-screen bg-slate-200 sticky py-32 pb-52 md:pb-0 flex flex-col items-center top-0"
+    >
+      <div class="px-4 md:px-10 lg:px-40 w-full">
+        <div
+          class="flex gap-y-5 flex-wrap md:flex-nowrap md:gap-y-0 items-center md:gap-x-8"
+        >
+          <div
+            class="shadow-2xl order-2 md:order-1 w-full md:w-1/2 rounded-2xl overflow-hidden"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.0129004654249!2d31.30848462423502!3d30.092708454731568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fd4a140afbb%3A0x72944f34179194f5!2z2KzYs9ixINin2YTYs9mI2YrYs9iMINmF2YbYtNmK2Kkg2KfZhNio2YPYsdmK2Iwg2YLYs9mFINmF2LXYsSDYp9mE2KzYr9mK2K_YqdiMINmF2K3Yp9mB2LjYqSDYp9mE2YLYp9mH2LHYqeKArCA0NTIwMTY2!5e0!3m2!1sar!2seg!4v1703584344377!5m2!1sar!2seg"
+              width="100%"
+              height="400px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="md:w-1/2 order-1 md:order-2">
+            <div class="flex">
+              <h3
+                style="letter-spacing: 5px"
+                class="theme-color border-b-2 theme-border font-bold text-2xl md:text-4xl"
+              >
+                Get in touch now!
+              </h3>
+            </div>
+            <div class="mt-5">
+              <div
+                class="flex hover:bg-black hover:shadow-xl rounded-xl text-gray-300 p-5 items-center text-md"
+              >
+                <i class="fa-solid theme-color mr-2 fa-location-dot"></i>
+                <h3>Location : 34 Gesr El Suez Street - Cairo - Egypt</h3>
+              </div>
+              <div
+                class="flex hover:bg-black hover:shadow-xl rounded-xl text-gray-300 p-5 items-center text-md"
+              >
+                <i class="fa-solid theme-color mr-2 fa-square-phone"></i>
+                <h3>Telephone : +20 22 45533 73</h3>
+              </div>
+              <div
+                class="flex items-start hover:bg-black hover:shadow-xl rounded-xl text-gray-300 p-5 text-md"
+              >
+                <i class="fa-solid theme-color mr-2 fa-phone"></i>
+                <h3 class="flex">
+                  Mobile : +2 010 10 084 842 --- +2 010 10 084 842
+                </h3>
+              </div>
+              <div
+                class="hover:bg-black hover:shadow-xl rounded-xl text-gray-300 p-5"
+              >
+                <div class="flex items-center text-md">
+                  <i
+                    class="fa-solid theme-color mr-2 fa-envelope-circle-check"
+                  ></i>
+
+                  <h2 class="flex-grow flex justify-between items-center">
+                    <div>CEO & founder E-mail : t.attia@li-systems.com</div>
+                    <i
+                      title="copy email"
+                      data-email-copy="t.attia@li-systems.com"
+                      class="fa-regular cursor-pointer fa-copy"
+                    ></i>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-32 bottom-0 absolute w-full py-3 bg-black flex flex-col items-center"
+      >
+        <img style="width: 200px" src="./src/assets/logo.png" alt="" />
+      </div>
+    </section>
+
+    <script src="./src/js/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/splide.min.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script>
+      var splide = new Splide("#it", {
+        fixedWidth: 400,
+        perPage: 3,
+        pagination: false,
+        focus: 0,
+        omitEnd: true,
+        gap: 20,
+        breakpoints: {
+          500: {
+            fixedWidth: 250,
+          },
+        },
+      });
+
+      splide.mount();
+
+      var splide4 = new Splide("#sql", {
+        fixedWidth: 220,
+        perPage: 3,
+        pagination: false,
+        focus: 0,
+        arrows: false,
+        omitEnd: true,
+        gap: 10,
+        breakpoints: {
+          500: {
+            fixedWidth: 210,
+            // perPage: 1,
+          },
+        },
+      });
+
+      splide4.mount();
+
+      document.querySelector(".fa-copy").addEventListener("click", function () {
+        let emailCopy = document
+          .querySelector(".fa-copy")
+          .getAttribute("data-email-copy");
+
+        navigator.clipboard.writeText(emailCopy);
+      });
+    </script>
+  </body>
+</html>

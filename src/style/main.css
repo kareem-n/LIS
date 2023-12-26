@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --theme-color: rgb(196, 127, 0);
+  --bg-dark: #000000;
+  --text-white: #fff;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.theme-bg-color {
+  background-color: var(--theme-color);
+}
+
+.theme-color {
+  color: var(--theme-color) ;
+}
+
+.theme-border {
+  border-color: var(--theme-color);
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(207, 207, 207);
+}
+
+nav ul li a:hover {
+  color: var(--theme-color);
+}
+
+nav ul li a.active {
+  background-color: var(--theme-color) !important;
+  color: var(--text-white) !important;
+}
+
+.hero {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.219), #0000003f);
+}
+
+
+.splide__slide img {
+  width: 100%;
+  height: 300px ;
+  object-fit: cover;
+}
+
+
+#products button.active{
+  background-color: var(--theme-color);
+}
+
+
+#contact {
+  background: url("../assets/contact.jpg");
+  background-position: center center;
+  background-size: 100%;
+
+}
