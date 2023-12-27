@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.6"
+  },
+  "dependencies": {
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3"
   }
 }

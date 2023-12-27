@@ -8,7 +8,7 @@ html {
 }
 
 :root {
-  --theme-color: rgb(196, 127, 0);
+  --theme-color: #F29945;
   --bg-dark: #000000;
   --text-white: #fff;
 }
@@ -34,6 +34,16 @@ body {
 .theme-border {
   border-color: var(--theme-color);
 }
+.gradiant-btn{
+  background: linear-gradient(to right, #882409, #c57907);
+}
+
+
+.gradiant {
+  background: -webkit-linear-gradient( #0e6374, #be8304);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 nav ul li a {
   display: block;
@@ -50,7 +60,18 @@ nav ul li a.active {
 }
 
 .hero {
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.219), #0000003f);
+  background: url("../assets/hero-bg.jpg");
+  background-position: center ;
+  background-size: cover;
+  /* background: radial-gradient(circle, rgba(255, 255, 255, 0.219), #0000003f);
+  /*  */
+} 
+
+.hero .layer {
+   background: radial-gradient(circle, rgba(48, 48, 48, 0.704), rgba(0, 0, 0, 0.938));
+   position: absolute;
+   inset: 0;
+  
 }
 
 
@@ -71,4 +92,19 @@ nav ul li a.active {
   background-position: center center;
   background-size: 100%;
 
+}
+
+.aboutSideLine::after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform:translateY(-50%) ;
+  width: 1rem;
+  height: 3px;
+  background-color: var(--theme-color);
+  -webkit-transform:translateY(-50%) ;
+  -moz-transform:translateY(-50%) ;
+  -ms-transform:translateY(-50%) ;
+  -o-transform:translateY(-50%) ;
 }

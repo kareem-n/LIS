@@ -70,8 +70,7 @@
               href="#contact"
               class="md:py-1 py-2 px-8 rounded-tr-2xl rounded-bl-2xl"
             >
-              <i class="fa-regular pr-2 fa-envelope-open"></i>
-              Contact US
+              <i class="fa-regular pr-2 fa-envelope-open"></i>Contact US
             </a>
           </li>
         </ul>
@@ -88,35 +87,37 @@
 
     <section
       id="home"
-      class="hero px-4 md:px-10 lg:px-40 flex items-center min-h-screen"
+      class="hero px-4 relative md:px-10 lg:px-40 flex items-center min-h-screen"
     >
-      <div class="w-full flex items-center justify-between">
+      <div class="layer"></div>
+      <div class="w-full relative z-10 flex items-center justify-between">
         <div class="w-full md:w-1/2 text-center">
           <h1 class="text-2xl md:text-4xl font-bold leading-normal">
-            Any <span class="theme-color">Device,</span> <br />Every
-            <span class="theme-color">System,</span>
-            <br />
             <span style="letter-spacing: 3px" class="theme-color"
               >Empowering</span
             >
-            Your Success
+            Your Success <br />
+            Every
+            <span class="theme-color"> System, </span>
+            Any <span class="theme-color">Device,</span>
+            <br />
           </h1>
-          <h3 class="mt-1 text-md text-gray-300">
+          <h3 class="mt-5 text-md text-gray-300">
             Where Support Never Ends!, find out any
             <span class="theme-color">Hardware & IT device</span>
           </h3>
 
-          <div class="mt-5 ">
+          <div class="mt-5">
             <a
-              class="theme-bg-color rounded-xl opacity-90 inline-block hover:opacity-100 px-5 py-2"
-              href=""
+              class="gradiant-btn text-white rounded-xl opacity-90 inline-block hover:opacity-100 md:text-xl px-5 py-2"
+              href="#contact"
             >
               Get in touch
             </a>
             <div class="inline-block">
               <a
-                class="border  relative theme-border theme-color ml-3 inline-block rounded-xl px-5 py-2"
-                href=""
+                class="border relative theme-border md:text-xl theme-color ml-3 inline-block rounded-xl px-5 py-2"
+                href="#products"
               >
                 Explore
               </a>
@@ -124,70 +125,235 @@
           </div>
         </div>
         <img
-          src="./src/assets/hero.png"
+          src="./src/assets/hero3.png"
           class="hidden w-1/2 lg:block rounded-3xl"
           alt="IT devices"
         />
       </div>
-
-      <svg
-        class="absolute left-0 bottom-0 -z-10"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="rgb(196, 127, 0)"
-          fill-opacity="1"
-          d="M0,256L40,224C80,192,160,128,240,122.7C320,117,400,171,480,208C560,245,640,267,720,277.3C800,288,880,288,960,250.7C1040,213,1120,139,1200,101.3C1280,64,1360,64,1400,64L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
 
-    <section id="about" class="min-h-screen md:sticky flex items-center top-0 bg-slate-100">
+    <section id="about" class="min-h-screen relative bg-slate-100">
       <div
-        class="overflow-hidden px-4 md:px-10 py-10 lg:px-40 flex items-center flex-wrap"
+        class="flex absolute top-5 left-1/2 w-full md:w-auto -translate-x-1/2 px-3 md:border-b-4 theme-border rounded-xl md:px-10 py-5 z-10 theme-border items-center theme-color"
+      >
+        <h2
+          style="letter-spacing: 4px"
+          class="relative text-center flex-grow text-lg uppercase md:text-4xl font-bold"
+        >
+          about L.I.S
+        </h2>
+        <i class="fa-regular hidden md:block fa-2x pl-4 fa-circle-question"></i>
+      </div>
+
+      <div
+        class="overflow-hidden px-4 md:px-10 pt-10 lg:px-40 mt-16 flex items-center flex-wrap"
       >
         <img
           src="./src/assets/about.png"
-          class="opacity-0 w-full md:w-1/2 transition-all aboutRightImg"
+          class="opacity-0 order-2 md:order-1 w-full md:w-1/2 transition-all aboutRightImg"
           alt=""
         />
         <div
-          class="w-full md:w-1/2 mt-5 md:mt-0 aboutLeftContent  transition-all translate-x-20 text-black rounded-3xl overflow-hidden bg-gray-200 shadow-2xl"
+          class="w-full mt-16 md:mt-0 md:w-1/2 aboutLeftContent transition-all translate-x-20 text-black"
         >
-          <div
-            class="flex px-3 md:px-10 py-5 theme-bg-color text-white justify-between items-center"
-          >
-            <h2
-              style="letter-spacing: 4px"
-              class="relative text-2xl md:text-4xl font-bold"
-            >
-              About Us
-            </h2>
-            <i class="fa-regular fa-2x fa-circle-question"></i>
+          <div class="flex flex-col gap-y-5 items-center gap-x-2 pr-1">
+            <div class="w-full flex items-center">
+              <span
+                style="width: 25px; height: 25px"
+                class="theme-bg-color opacity-70 relative aboutSideLine rounded-full mr-5"
+              ></span>
+              <div
+                class="bg-gray-200 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
+              >
+                <span class="theme-color text-xl font-bold">L.I.S </span> a
+                group of tech enthusiasts on a mission to revolutionize your
+                digital experience. providing cutting-edge IT solutions and
+                high-quality hardware devices to empower businesses and
+                individuals alike.
+              </div>
+            </div>
+            <div class="w-full flex items-center">
+              <span
+                style="width: 25px; height: 25px"
+                class="theme-bg-color opacity-70 relative aboutSideLine rounded-full mr-5"
+              ></span>
+              <div
+                class="bg-gray-200 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
+              >
+                <span class="theme-color text-xl font-bold">Our Mission </span>
+                offering a diverse range of products that cater to the dynamic
+                demands of the digital era.
+              </div>
+            </div>
+            <div class="w-full flex items-center">
+              <span
+                style="width: 25px; height: 25px"
+                class="theme-bg-color opacity-70 relative aboutSideLine rounded-full mr-5"
+              ></span>
+              <div
+                class="bg-gray-200 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
+              >
+                <span class="theme-color text-xl font-bold"
+                  >Eng-Tarek Attia,
+                </span>
+                the driving force and founder of
+                <span class="gradiant">L.I.S</span>. With over +20 of invaluable
+                experience in the hardware and IT Devices Solutions.
+              </div>
+            </div>
           </div>
-          <div class="px-3 md:px-10 text-gray-600 py-5">
-            <p>
-              -
-              <span class="text-xl theme-color">L.I.S </span>
-              a group of tech enthusiasts on a mission
-              to revolutionize your digital experience. providing cutting-edge
-              IT solutions and high-quality hardware devices to empower
-              businesses and individuals alike.
-            </p>
-            <p class="mt-3">
-              -
-              <span class="text-xl theme-color">Our Mission</span>
-              offering a diverse range of products that cater to the dynamic
-              demands of the digital era.
-            </p>
+        </div>
+      </div>
 
-            <p class="mt-3">
-              -
-              <span class="text-xl theme-color">CEO & Founder</span>
-              Eng Tarek Attia with over than +20 years of experience in Hardware
-              and IT devices providers
-            </p>
+      <div class="theme-bg-color px-4 md:px-10 py-10 lg:px-40">
+        <h2
+          style="letter-spacing: 5px"
+          class="text-center font-bold text-xl md:text-4xl"
+        >
+          why Choose L.I.S?
+        </h2>
+        <div class="mt-10 flex flex-wrap md:flex-nowrap gap-y-4 md:gap-y-0 md:gap-x-5">
+          <div class="bg-stone-100  w-full text-black md:w-1/3 rounded-xl overflow-hidden">
+            <img
+              style="height: 300px"
+              class="w-full object-cover"
+              src="./src/assets/whyus/1.jpg"
+              alt=""
+            />
+            <div class="mt-2 px-5 py-3">
+              <p class="text-xl">Expertise in Cutting-Edge Technology</p>
+              <p class="mt-2 text-gray-600">
+                we bring unparalleled expertise in IT devices and cutting-edge
+                hardware systems.
+              </p>
+            </div>
+          </div>
+          <div class="bg-stone-100 w-full text-black md:w-1/3 rounded-xl overflow-hidden">
+            <img
+              style="height: 300px"
+              class="w-full object-cover"
+              src="./src/assets/whyus/2.jpg"
+              alt=""
+            />
+            <div class="mt-2 px-5 py-3">
+              <p class="text-xl">Confidentiality & Security</p>
+              <p class="mt-2 text-gray-600">
+                We ensure a robust commitment to confidentiality and security
+                for every project, meticulously safeguarding the intellectual
+                assets of our clients.
+              </p>
+            </div>
+          </div>
+          <div class="bg-stone-100 text-black w-full  md:w-1/3 rounded-xl overflow-hidden">
+            <img
+              style="height: 300px"
+              class="w-full object-cover"
+              src="./src/assets/whyus/3.jpg"
+              alt=""
+            />
+            <div class="mt-2 px-5 py-3">
+              <p class="text-xl">Long Lasting Relationships</p>
+              <p class="mt-2 text-gray-600">
+                Our commitment extends well beyond the point of purchase. We
+                take immense pride in our post-sale service, ensuring that you
+                experience unparalleled support and assistance throughout the
+                lifecycle of your product.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-4 md:px-10 py-10 mt-10 lg:px-40">
+        <div class="">
+          <h2 class="font-bold text-gray-800 text-xl md:text-3xl text-center">
+            Meet Our Customers
+          </h2>
+        </div>
+
+        <div id="customers" class="splide mt-10">
+          <div class="splide__track bg-gray-100 rounded-lg">
+            <ul class="splide__list">
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0024.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0025.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0026.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0027.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0028.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0029.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0030.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0032.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0033.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0034.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide p-4">
+                <img
+                  src="./src/assets/customers/IMG-20231226-WA0035.jpg"
+                  class="h-full rounded-2xl bg-red-400"
+                  alt=""
+                />
+              </li>
+              <!-- Add more slides as needed -->
+            </ul>
           </div>
         </div>
       </div>
@@ -198,7 +364,7 @@
         <h2
           class="text-2xl md:text-5xl opacity-0 transition-all scale-0 productTitle font-bold text-center"
         >
-          Products
+          Products We Provide
         </h2>
         <div class="mt-5 md:flex md:justify-center">
           <div class="p-3 bg-white bg-opacity-20 rounded-full">
@@ -377,9 +543,9 @@
                 <li
                   class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
                 >
-                  <img src="./src/assets/products/firewal.png" alt="" />
+                  <img src="./src/assets/products/anti.webp" alt="" />
                   <div class="px-5 py-4 theme-bg-color text-center">
-                    Firewalls
+                    antivirus
                   </div>
                 </li>
                 <li
@@ -505,7 +671,9 @@
 
     <script src="./src/js/jquery-3.6.0.min.js"></script>
     <script src="./src/js/splide.min.js"></script>
+    <script src="./src/js/splide-extension-auto-scroll.min.js"></script>
     <script src="./src/js/main.js"></script>
+
     <script>
       var splide = new Splide("#it", {
         fixedWidth: 400,

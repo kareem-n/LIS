@@ -50,6 +50,7 @@ window.addEventListener("load", function () {
   const navLinksMap = (activeLink) => {
     navLinks.map((link) => {
       if (link.innerText == activeLink) {
+        
         link.classList.add("active");
       } else {
         link.classList.remove("active");
@@ -204,4 +205,23 @@ window.addEventListener("load", function () {
       }
     });
   });
+
+  const customers = document.querySelector("#customers");
+
+  new Splide(customers, {
+    fixedWidth: "300px",
+    // fixedHeight: "300px",
+    type: "loop",
+    pagination: false ,
+    drag: "free",
+    arrows: false,
+    interval: 2000,
+
+    autoplay: true,
+    breakpoints: {
+      500: {
+        fixedWidth: "250px",
+      }},
+   
+  }).mount(window.splide.Extensions);
 });
