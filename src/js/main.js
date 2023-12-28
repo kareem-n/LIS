@@ -22,20 +22,23 @@ window.addEventListener("load", function () {
 
     list.classList.remove("hidden");
 
+
+    Array.from(list.children).forEach((link) => {
+      link.classList.add("border-b" ,"border-white") ;
+    });
+
     document.querySelector("nav .toggledList").children[0].appendChild(list);
 
     document.querySelector("nav .toggledList").classList.toggle("hidden");
 
     let x = document.querySelector(".toggledList");
 
-    console.log(
-      x.firstElementChild.firstElementChild.addEventListener(
-        "click",
-        function () {
-          document.querySelector("nav .toggledList").classList.add("hidden");
-          navListToggleBtn.children[0].classList.replace("fa-close", "fa-bars");
-        }
-      )
+    x.firstElementChild.firstElementChild.addEventListener(
+      "click",
+      function () {
+        document.querySelector("nav .toggledList").classList.add("hidden");
+        navListToggleBtn.children[0].classList.replace("fa-close", "fa-bars");
+      }
     );
   });
 
@@ -50,7 +53,6 @@ window.addEventListener("load", function () {
   const navLinksMap = (activeLink) => {
     navLinks.map((link) => {
       if (link.innerText == activeLink) {
-        
         link.classList.add("active");
       } else {
         link.classList.remove("active");
@@ -212,16 +214,16 @@ window.addEventListener("load", function () {
     fixedWidth: "300px",
     // fixedHeight: "300px",
     type: "loop",
-    pagination: false ,
+    pagination: false,
     drag: "free",
     arrows: false,
-    interval: 2000,
+    interval: 1000,
 
     autoplay: true,
     breakpoints: {
       500: {
         fixedWidth: "250px",
-      }},
-   
+      },
+    },
   }).mount(window.splide.Extensions);
 });

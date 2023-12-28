@@ -26,16 +26,16 @@
         NAVBAR
      -->
     <nav
-      class="py-2 transition-colors fixed top-0 w-full z-50 px-4 md:px-10 lg:px-40"
+      class="py-2 transition-colors fixed top-0 w-full z-50 px-6  md:px-10 lg:px-40"
     >
       <div class="flex relative z-50 justify-between items-center">
-        <div class="logo">
-          <a href="#home">
+        <div class="logo ">
+          <a href="#home" class="flex flex-col items-center theme-color">
+            Lavenir Integrated Systems
             <img
               src="./src/assets/logo.png"
-              style="width: 100px"
-              class=""
-              alt=""
+              style="width: 150px;"
+              alt="logo"
             />
           </a>
         </div>
@@ -75,19 +75,19 @@
           </li>
         </ul>
 
-        <div class="list md:hidden cursor-pointer">
+        <div class="list md:hidden  cursor-pointer">
           <i class="fa-solid text-2xl fa-bars"></i>
         </div>
       </div>
 
       <div class="z-40 hidden toggledList fixed bg-black bg-opacity-50 inset-0">
-        <div class="bg-black h-full absolute pt-20"></div>
+        <div class="bg-black h-full w-full absolute pt-32"></div>
       </div>
     </nav>
 
     <section
       id="home"
-      class="hero px-4 relative md:px-10 lg:px-40 flex items-center min-h-screen"
+      class="hero px-4 overflow-hidden relative md:px-10 lg:px-40 flex items-center min-h-screen"
     >
       <div class="layer"></div>
       <div class="w-full relative z-10 flex items-center justify-between">
@@ -132,13 +132,13 @@
       </div>
     </section>
 
-    <section id="about" class="min-h-screen relative bg-slate-100">
+    <section id="about" class="min-h-screen overflow-hidden relative bg-slate-100">
       <div
         class="flex absolute top-5 left-1/2 w-full md:w-auto -translate-x-1/2 px-3 md:border-b-4 theme-border rounded-xl md:px-10 py-5 z-10 theme-border items-center theme-color"
       >
         <h2
           style="letter-spacing: 4px"
-          class="relative text-center flex-grow text-lg uppercase md:text-4xl font-bold"
+          class="relative text-center flex-grow text-2xl uppercase md:text-4xl font-bold"
         >
           about L.I.S
         </h2>
@@ -160,10 +160,10 @@
             <div class="w-full flex items-center">
               <span
                 style="width: 25px; height: 25px"
-                class="theme-bg-color opacity-70 relative aboutSideLine rounded-full mr-5"
+                class="theme-bg-color hidden md:inline-block opacity-70 relative aboutSideLine rounded-full mr-5"
               ></span>
               <div
-                class="bg-gray-200 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
+                class="bg-gray-200 border theme-border border-opacity-50 md:border-0 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
               >
                 <span class="theme-color text-xl font-bold">L.I.S </span> a
                 group of tech enthusiasts on a mission to revolutionize your
@@ -175,10 +175,10 @@
             <div class="w-full flex items-center">
               <span
                 style="width: 25px; height: 25px"
-                class="theme-bg-color opacity-70 relative aboutSideLine rounded-full mr-5"
+                class="theme-bg-color hidden md:inline-block opacity-70 relative aboutSideLine rounded-full mr-5"
               ></span>
               <div
-                class="bg-gray-200 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
+                class="bg-gray-200 border theme-border border-opacity-50 md:border-0 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
               >
                 <span class="theme-color text-xl font-bold">Our Mission </span>
                 offering a diverse range of products that cater to the dynamic
@@ -188,16 +188,16 @@
             <div class="w-full flex items-center">
               <span
                 style="width: 25px; height: 25px"
-                class="theme-bg-color opacity-70 relative aboutSideLine rounded-full mr-5"
+                class="theme-bg-color hidden md:inline-block opacity-70 relative aboutSideLine rounded-full mr-5"
               ></span>
               <div
-                class="bg-gray-200 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
+                class="bg-gray-200 border theme-border border-opacity-50 md:border-0 text-gray-600 w-full px-4 py-3 rounded-lg shadow-lg"
               >
                 <span class="theme-color text-xl font-bold"
                   >Eng-Tarek Attia,
                 </span>
                 the driving force and founder of
-                <span class="gradiant">L.I.S</span>. With over +20 of invaluable
+                <span class="theme-color font-bold">L.I.S</span>. With over +25 of invaluable
                 experience in the hardware and IT Devices Solutions.
               </div>
             </div>
@@ -205,10 +205,10 @@
         </div>
       </div>
 
-      <div class="theme-bg-color px-4 md:px-10 py-10 lg:px-40">
+      <div class="theme-bg-color px-4 md:px-10 py-20 md:py-10 lg:px-40">
         <h2
           style="letter-spacing: 5px"
-          class="text-center font-bold text-xl md:text-4xl"
+          class="text-center font-bold text-2xl md:text-4xl"
         >
           why Choose L.I.S?
         </h2>
@@ -360,13 +360,13 @@
     </section>
 
     <section id="products" class="sticky top-0 min-h-screen bg-dark">
-      <div class="py-16 px-4 md:px-10 lg:px-40">
+      <div class="py-16 overflow-hidden px-4 md:px-10 lg:px-40">
         <h2
           class="text-2xl md:text-5xl opacity-0 transition-all scale-0 productTitle font-bold text-center"
         >
           Products We Provide
         </h2>
-        <div class="mt-5 md:flex md:justify-center">
+        <div class="mt-5 overflow-hidden md:flex md:justify-center">
           <div class="p-3 bg-white bg-opacity-20 rounded-full">
             <div id="sql" class="splide">
               <div class="splide__track">
@@ -395,10 +395,10 @@
           </div>
         </div>
 
-        <div class="mt-10 px-4 md:px-10">
+        <div class="mt-10 overflow-hidden md:px-10">
           <div id="it" class="splide">
-            <div class="splide__track px-10">
-              <ul class="splide__list px-10">
+            <div class="splide__track ">
+              <ul class="splide__list ">
                 <li
                   class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
                 >
@@ -410,7 +410,7 @@
                 <li
                   class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
                 >
-                  <img src="./src/assets/products/desktops.jpg" alt="" />
+                  <img src="./src/assets/products/desktops.png" alt="" />
                   <div class="px-5 py-4 theme-bg-color text-center">
                     Desktops
                   </div>
@@ -418,7 +418,7 @@
                 <li
                   class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
                 >
-                  <img src="./src/assets/products/prinnters.webp" alt="" />
+                  <img src="./src/assets/products/printers.png" alt="" />
                   <div class="px-5 py-4 theme-bg-color text-center">
                     Printers
                   </div>
@@ -426,7 +426,7 @@
                 <li
                   class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
                 >
-                  <img src="./src/assets/products/access.jpg" alt="" />
+                  <img src="./src/assets/products/acc.png" alt="" />
                   <div class="px-5 py-4 theme-bg-color text-center">
                     Access Points
                   </div>
@@ -457,12 +457,12 @@
             </div>
             <div class="splide__arrows">
               <button
-                class="splide__arrow splide__arrow--prev theme-bg-color -left-7 md:-left-10"
+                class="splide__arrow splide__arrow--prev theme-bg-color -left-3 md:-left-10"
               >
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </button>
               <button
-                class="splide__arrow splide__arrow--next theme-bg-color -right-7 md:-right-10"
+                class="splide__arrow splide__arrow--next theme-bg-color -right-3 md:-right-10"
               >
                 <i class="fa-solid fa-circle-arrow-right"></i>
               </button>
@@ -509,12 +509,12 @@
 
             <div class="splide__arrows">
               <button
-                class="splide__arrow splide__arrow--prev theme-bg-color -left-7 md:-left-10"
+                class="splide__arrow splide__arrow--prev theme-bg-color -left-3 md:-left-10"
               >
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </button>
               <button
-                class="splide__arrow splide__arrow--next theme-bg-color -right-7 md:-right-10"
+                class="splide__arrow splide__arrow--next theme-bg-color -right-3 md:-right-10"
               >
                 <i class="fa-solid fa-circle-arrow-right"></i>
               </button>
@@ -543,7 +543,15 @@
                 <li
                   class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
                 >
-                  <img src="./src/assets/products/anti.webp" alt="" />
+                  <img src="./src/assets/products/firewalls.png" alt="" />
+                  <div class="px-5 py-4 theme-bg-color text-center">
+                    Firewalls
+                  </div>
+                </li>
+                <li
+                  class="splide__slide rounded-2xl shadow-2xl overflow-hidden"
+                >
+                  <img src="./src/assets/products/anti.png" alt="" />
                   <div class="px-5 py-4 theme-bg-color text-center">
                     antivirus
                   </div>
@@ -569,12 +577,12 @@
 
             <div class="splide__arrows">
               <button
-                class="splide__arrow splide__arrow--prev theme-bg-color -left-7 md:-left-10"
+                class="splide__arrow splide__arrow--prev theme-bg-color -left-3 md:-left-10"
               >
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </button>
               <button
-                class="splide__arrow splide__arrow--next theme-bg-color -right-7 md:-right-10"
+                class="splide__arrow splide__arrow--next theme-bg-color -right-3 md:-right-10"
               >
                 <i class="fa-solid fa-circle-arrow-right"></i>
               </button>
@@ -634,9 +642,9 @@
               <div
                 class="flex items-start hover:bg-black hover:shadow-xl rounded-xl text-gray-300 p-5 text-md"
               >
-                <i class="fa-solid theme-color mr-2 fa-phone"></i>
+                <i class="fa-solid theme-color mr-2 mt-1 fa-mobile-phone"></i>
                 <h3 class="flex">
-                  Mobile : +2 010 10 084 842 --- +2 010 10 084 842
+                  Mobile : +2 010 10 084 842 --- +2 011 00 194 293
                 </h3>
               </div>
               <div
@@ -684,7 +692,7 @@
         gap: 20,
         breakpoints: {
           500: {
-            fixedWidth: 250,
+            fixedWidth: 280,
           },
         },
       });

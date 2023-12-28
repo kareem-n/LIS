@@ -17,6 +17,9 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-white);
   font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* background-color: red; */
+
 }
 
 .bg-dark {
@@ -75,11 +78,12 @@ nav ul li a.active {
 }
 
 
-.splide__slide img {
+#products .splide__slide img {
   width: 100%;
-  height: 300px ;
+  height: 350px ;
   object-fit: cover;
 }
+
 
 
 #products button.active{
@@ -107,4 +111,11 @@ nav ul li a.active {
   -moz-transform:translateY(-50%) ;
   -ms-transform:translateY(-50%) ;
   -o-transform:translateY(-50%) ;
+}
+
+
+@media screen and (max-width:500px) {
+  #products .splide__slide img {
+    height: 250px ;
+  }
 }
