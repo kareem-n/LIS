@@ -653,10 +653,6 @@ video {
   right: -0.75rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -3032,6 +3028,11 @@ nav ul li a.active {
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 

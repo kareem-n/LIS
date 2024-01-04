@@ -12,6 +12,15 @@ window.addEventListener("load", function () {
   const about = document.querySelector("#about");
   const products = document.querySelector("#products");
   const contact = document.querySelector("#contact");
+  const our_customers = document.querySelector("#our_customers");
+
+  const out_customers = document.querySelector(".spec");
+
+
+  out_customers.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo(0, our_customers.offsetTop + 500);
+  });
 
   navListToggleBtn.addEventListener("click", () => {
     if (navListToggleBtn.children[0].classList.contains("fa-bars")) {
@@ -22,9 +31,8 @@ window.addEventListener("load", function () {
 
     list.classList.remove("hidden");
 
-
     Array.from(list.children).forEach((link) => {
-      link.classList.add("border-b" ,"border-white") ;
+      link.classList.add("border-b", "border-white");
     });
 
     document.querySelector("nav .toggledList").children[0].appendChild(list);
@@ -63,8 +71,16 @@ window.addEventListener("load", function () {
   const handleNavLinksColor = () => {
     if (getSectionTop(about) > 100) {
       navLinksMap("Home");
-    } else if (getSectionTop(about) < 100 && getSectionTop(products) > 100) {
+    } else if (
+      getSectionTop(about) < 100 &&
+      getSectionTop(our_customers) > 300
+    ) {
       navLinksMap("About US");
+    } else if (
+      getSectionTop(our_customers) < 500 &&
+      getSectionTop(products) > 500
+    ) {
+      navLinksMap("Our Customers");
     } else if (getSectionTop(products) < 100 && getSectionTop(contact) > 100) {
       navLinksMap("Products");
     } else if (getSectionTop(contact) < 100) {
